@@ -1,25 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <header className='header'>
+      <News country="Южная Корея"
+        article="На этой неделе погода в Южной Корее будет переменчивой: от солнечных дней до кратковременных дождей. Температура остаётся комфортной для начала весны, но в некоторых регионах возможны прохладные ночи." />
+    </header>
   );
+}
+
+function News(props) {
+  return (
+    <div>
+      <h1 style={{ color: "green" }} className='header__greeting'>Привет, {props.country}!</h1>
+      <article style={{ color: "purple" }} className='header__article'>{props.article}</article>
+    </div>
+  )
 }
 
 export default App;

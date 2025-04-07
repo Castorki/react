@@ -32,7 +32,13 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+.header {
+  padding-left: calc(50% - 570px);
+  padding-right: calc(50% - 570px);
 }
