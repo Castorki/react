@@ -38,7 +38,15 @@
   }
 }
 
-.header {
-  padding-left: calc(50% - 570px);
-  padding-right: calc(50% - 570px);
+.comments {
+  padding-left: calc(50% - 300px);
+  padding-right: calc(50% - 300px);
+}
+
+.delet__comment_button {
+  margin-top: 5px;
+  margin-bottom: 8px;
+  padding: 3px 8px;
+  background-color: rgb(235, 83, 83);
+  border: 1px solid rgb(241, 35, 35);
 }
