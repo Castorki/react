@@ -50,3 +50,26 @@
   background-color: rgb(235, 83, 83);
   border: 1px solid rgb(241, 35, 35);
 }
+
+.main {
+  padding-left: calc(50% - 250px);
+  padding-right: calc(50% - 250px);
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+input[type='number'],
+input[type="number"]:hover,
+input[type="number"]:focus {
+  appearance: none;
+  -moz-appearance: textfield;
+}
+
+.task_fields {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}

@@ -1,13 +1,18 @@
 import './App.css';
-import CommentsList from './components/CommentsList';
+import TemperatureConverter from './components/TemperatureConverter';
+import ToDoList from './components/TodoList ';
 
 function App() {
   return (
-    <div className='comments'>
-      <h2>Список комментариев</h2>
-      <ul>
-        <CommentsList />
-      </ul>
+    <div className='main'>
+      <div className='degrees__Calculater'>
+        <h2>Калькулятор градусов</h2>
+        <TemperatureConverter />
+      </div>
+      <div className='toDoList'>
+        <h2>Список дел</h2>
+        <ToDoList />
+      </div>
     </div>
   );
 }
